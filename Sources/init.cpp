@@ -19,15 +19,18 @@ customer_base* init::initialize_customer()
     m_customer = new customer_base(rand());
     return m_customer;
 }
-void init::initialize_checkout_clerk()
+checkoutclerk_base* init::initialize_checkout_clerk()
 {
-
+    m_checkout = new checkoutclerk_base();
+    return m_checkout;
 }
-void init::initialize_operations()
+operations* init::initialize_operations()
 {
-
+    m_operations = new operations();
+    return m_operations;
 }
-void init::initialize_display()
+display* init::initialize_display()
 {
-
+    m_display = new display();
+    return m_display;
 }
