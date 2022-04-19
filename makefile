@@ -4,6 +4,6 @@ customer_base.o: .\Sources\Customer\customer_base.cpp .\Sources\Customer\custome
 	g++ -c .\Sources\Customer\customer_base.cpp
 init.o:.\Sources\init.cpp .\Sources\init.h
 	g++ -c .\Sources\init.cpp
-main.o:main.cpp main.h
-	g++ -c main.cpp
+main.o:.\Sources\main.cpp .\Sources\main.h
+	g++ -c .\Sources\main.cpp
 clean : rm *.o output

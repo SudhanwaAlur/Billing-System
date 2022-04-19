@@ -1,5 +1,5 @@
 #include "main.h" 
-#include ".\Sources\init.h"
+#include "init.h"
 int main(int argc, char *argv[])
 {
     init* po_initialize_system = new init();
