@@ -5,6 +5,7 @@
 #include "./CheckoutClerk/checkoutclerk_base.h"
 #include "./Display/display.h"
 #include "./Operations/operations.h"
+#include "./Database/Items.h"
 class init
 {
 private:
@@ -13,6 +14,8 @@ private:
     checkoutclerk_base *m_checkout=NULL;
     display *m_display=NULL;
     operations *m_operations=NULL;
+    Items *m_items=NULL;
+
 public:
     init(/* args */);
     void initialize_billing_system();
@@ -20,6 +23,7 @@ public:
     checkoutclerk_base* initialize_checkout_clerk();
     display* initialize_display();
     operations* initialize_operations();
+    Items* initialize_items();
     ~init();
 };
 #endif

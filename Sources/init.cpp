@@ -12,6 +12,10 @@ init::~init()
 void init::initialize_billing_system()
 {
     initialize_customer();
+    initialize_checkout_clerk();
+    initialize_operations();
+    initialize_display();
+        initialize_items();
 }
 customer_base* init::initialize_customer()
 {
@@ -33,4 +37,10 @@ display* init::initialize_display()
 {
     m_display = new display();
     return m_display;
+}
+Items* init::initialize_items()
+{
+    m_items = new Items();
+   // m_items->initialize_database();
+    return m_items;
 }
